@@ -256,7 +256,7 @@ export const RECIPE_SAMPLES: RecipeSample[] = [
     category: 'Sleep & Nervous System',
     intro:
       'A soothing synergistic botanical blend crafted to gently quiet repetitive thoughts and ease physical muscular tension before bed. Chamomile relaxes the central nervous system, lemon balm eases restlessness, and passionflower promotes deep restorative REM cycles without grogginess the next morning.',
-    imageHero: '/images/woman_reading_herbal_book_1790266668108.jpg',
+    imageHero: '/images/calm_cover.png',
     imageIngredients: '/images/remedy_tea_ingredients_1790266684287.jpg',
     ingredients: [
       '1 tablespoon dried chamomile flowers',
@@ -297,7 +297,7 @@ export const RECIPE_SAMPLES: RecipeSample[] = [
     category: 'Muscle & Joint Care',
     intro:
       'An invigorating warming topical ointment formulated for physical labor, lumbar aches, and stiff joints. Arnica extract stimulates localized circulation while rosemary and peppermint essential oils soothe inflamed muscle fibers.',
-    imageHero: '/images/woman_tasting_herbal_syrup_1790266697808.jpg',
+    imageHero: '/images/rosemary_cover.png',
     imageIngredients: '/images/remedy_tea_ingredients_1790266684287.jpg',
     ingredients: [
       '2 tablespoons arnica-infused olive oil',
