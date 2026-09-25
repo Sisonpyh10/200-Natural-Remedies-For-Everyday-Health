@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Check, ChevronDown, ChevronUp, Tag, ShieldCheck, Sparkles, BookOpen, Smartphone } from 'lucide-react';
-import { FAQS } from '../data/content';
+import { FAQS, STRIPE_CHECKOUT_URL } from '../data/content';
 
 interface HeroProductProps {
   onAddToCart: () => void;
@@ -158,13 +158,13 @@ export const HeroProduct: React.FC<HeroProductProps> = ({
 
             {/* BUY NOW CTA */}
             <div className="mt-8">
-              <button
-                onClick={onAddToCart}
-                className="w-full bg-[#5f7d54] hover:bg-[#526e47] active:bg-[#465f3d] text-white font-bold py-4 px-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 text-base sm:text-lg tracking-wider uppercase flex items-center justify-center gap-3 cursor-pointer group"
+              <a
+                href={STRIPE_CHECKOUT_URL}
+                className="w-full bg-[#5f7d54] hover:bg-[#526e47] active:bg-[#465f3d] text-white font-bold py-4 px-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 text-base sm:text-lg tracking-wider uppercase flex items-center justify-center gap-3 cursor-pointer group text-center"
               >
                 <span>BUY NOW - 59% OFF</span>
                 <span className="text-white/80 group-hover:translate-x-1 transition-transform">→</span>
-              </button>
+              </a>
 
               <div className="flex items-center justify-center gap-4 mt-3 text-xs text-stone-500">
                 <span className="flex items-center gap-1">

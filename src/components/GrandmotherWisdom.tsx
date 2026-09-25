@@ -1,10 +1,11 @@
 import React from 'react';
+import { STRIPE_CHECKOUT_URL } from '../data/content';
 
 interface GrandmotherWisdomProps {
-  onBuyNow: () => void;
+  onBuyNow?: () => void;
 }
 
-export const GrandmotherWisdom: React.FC<GrandmotherWisdomProps> = ({ onBuyNow }) => {
+export const GrandmotherWisdom: React.FC<GrandmotherWisdomProps> = () => {
   return (
     <section className="py-16 sm:py-24 bg-white border-b border-[#ede7df]">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
@@ -39,12 +40,12 @@ export const GrandmotherWisdom: React.FC<GrandmotherWisdomProps> = ({ onBuyNow }
         </div>
 
         <div className="mt-10">
-          <button
-            onClick={onBuyNow}
-            className="bg-[#5f7d54] hover:bg-[#506c46] active:bg-[#435c3b] text-white font-bold py-3.5 px-10 rounded-lg shadow-sm hover:shadow-md transition-all text-base tracking-wide cursor-pointer uppercase"
+          <a
+            href={STRIPE_CHECKOUT_URL}
+            className="inline-block bg-[#5f7d54] hover:bg-[#506c46] active:bg-[#435c3b] text-white font-bold py-3.5 px-10 rounded-lg shadow-sm hover:shadow-md transition-all text-base tracking-wide cursor-pointer uppercase text-center"
           >
             Buy Now
-          </button>
+          </a>
         </div>
       </div>
     </section>

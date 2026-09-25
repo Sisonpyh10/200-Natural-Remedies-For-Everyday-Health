@@ -1,10 +1,11 @@
 import React from 'react';
+import { STRIPE_CHECKOUT_URL } from '../data/content';
 
 interface PeaceOfMindSectionProps {
-  onClaimOffer: () => void;
+  onClaimOffer?: () => void;
 }
 
-export const PeaceOfMindSection: React.FC<PeaceOfMindSectionProps> = ({ onClaimOffer }) => {
+export const PeaceOfMindSection: React.FC<PeaceOfMindSectionProps> = () => {
   return (
     <section className="py-14 sm:py-20 bg-[#faf8f5] border-b border-[#ede7df]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -45,12 +46,12 @@ export const PeaceOfMindSection: React.FC<PeaceOfMindSectionProps> = ({ onClaimO
             </div>
 
             <div className="pt-2">
-              <button
-                onClick={onClaimOffer}
-                className="bg-[#5f7d54] hover:bg-[#506c46] active:bg-[#435c3b] text-white font-bold py-3.5 px-8 rounded-lg shadow-sm hover:shadow-md transition-all text-base tracking-wide cursor-pointer"
+              <a
+                href={STRIPE_CHECKOUT_URL}
+                className="inline-block bg-[#5f7d54] hover:bg-[#506c46] active:bg-[#435c3b] text-white font-bold py-3.5 px-8 rounded-lg shadow-sm hover:shadow-md transition-all text-base tracking-wide cursor-pointer text-center"
               >
                 Claim Your Offer!
-              </button>
+              </a>
             </div>
           </div>
         </div>

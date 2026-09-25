@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { SYMPTOMS_LIST } from '../data/content';
+import { SYMPTOMS_LIST, STRIPE_CHECKOUT_URL } from '../data/content';
 
 interface GrandmotherStoryProps {
-  onGetCopy: () => void;
+  onGetCopy?: () => void;
 }
 
-export const GrandmotherStory: React.FC<GrandmotherStoryProps> = ({ onGetCopy }) => {
+export const GrandmotherStory: React.FC<GrandmotherStoryProps> = () => {
   const [activeSymptom, setActiveSymptom] = useState<string | null>(null);
 
   return (
@@ -35,12 +35,12 @@ export const GrandmotherStory: React.FC<GrandmotherStoryProps> = ({ onGetCopy })
             </div>
 
             <div className="pt-2">
-              <button
-                onClick={onGetCopy}
-                className="bg-[#5f7d54] hover:bg-[#506c46] active:bg-[#435c3b] text-white font-bold py-3.5 px-8 rounded-lg shadow-sm hover:shadow-md transition-all text-base tracking-wide cursor-pointer"
+              <a
+                href={STRIPE_CHECKOUT_URL}
+                className="inline-block bg-[#5f7d54] hover:bg-[#506c46] active:bg-[#435c3b] text-white font-bold py-3.5 px-8 rounded-lg shadow-sm hover:shadow-md transition-all text-base tracking-wide cursor-pointer text-center"
               >
                 Get Your Copy
-              </button>
+              </a>
             </div>
           </div>
 

@@ -1,13 +1,12 @@
 import React from 'react';
 import { Lock, Award, ShieldCheck } from 'lucide-react';
+import { STRIPE_CHECKOUT_URL } from '../data/content';
 
 interface GuaranteeSectionProps {
-  onBuyWithGuarantee: () => void;
+  onBuyWithGuarantee?: () => void;
 }
 
-export const GuaranteeSection: React.FC<GuaranteeSectionProps> = ({
-  onBuyWithGuarantee,
-}) => {
+export const GuaranteeSection: React.FC<GuaranteeSectionProps> = () => {
   return (
     <section className="py-14 sm:py-20 bg-[#faf8f5] border-b border-[#ede7df]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -79,12 +78,12 @@ export const GuaranteeSection: React.FC<GuaranteeSectionProps> = ({
             </div>
 
             <div className="pt-2">
-              <button
-                onClick={onBuyWithGuarantee}
-                className="bg-[#5f7d54] hover:bg-[#506c46] active:bg-[#435c3b] text-white font-bold py-3.5 px-8 rounded-lg shadow-sm hover:shadow-md transition-all text-base tracking-wide cursor-pointer uppercase"
+              <a
+                href={STRIPE_CHECKOUT_URL}
+                className="inline-block bg-[#5f7d54] hover:bg-[#506c46] active:bg-[#435c3b] text-white font-bold py-3.5 px-8 rounded-lg shadow-sm hover:shadow-md transition-all text-base tracking-wide cursor-pointer uppercase text-center"
               >
                 Buy With Guarantee
-              </button>
+              </a>
             </div>
           </div>
         </div>

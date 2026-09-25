@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Timer } from 'lucide-react';
+import { STRIPE_CHECKOUT_URL } from '../data/content';
 
 export const AnnouncementBar: React.FC = () => {
   // 8-minute countdown timer (480 seconds) - always resets to 8 minutes on page reload
@@ -35,7 +36,11 @@ export const AnnouncementBar: React.FC = () => {
   const clockDisplay = `${minutes}:${seconds}`;
 
   return (
-    <div className="bg-[#4a6b46] text-white text-xs sm:text-sm font-medium py-2.5 overflow-hidden border-b border-[#3d5a3a] select-none">
+    <a
+      href={STRIPE_CHECKOUT_URL}
+      className="block bg-[#4a6b46] hover:bg-[#43623f] text-white text-xs sm:text-sm font-medium py-2.5 overflow-hidden border-b border-[#3d5a3a] select-none transition-colors cursor-pointer"
+      title="Click to claim 59% OFF"
+    >
       <div className="flex whitespace-nowrap overflow-hidden">
         <div className="flex animate-marquee space-x-6">
           {Array.from({ length: 8 }).map((_, i) => (
@@ -54,7 +59,7 @@ export const AnnouncementBar: React.FC = () => {
           ))}
         </div>
       </div>
-    </div>
+    </a>
   );
 };
 

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { X, Trash2, Plus, Minus, ShieldCheck, Check, Sparkles, Download, ArrowRight } from 'lucide-react';
 import { CartItem } from '../types';
+import { STRIPE_CHECKOUT_URL } from '../data/content';
 
 interface CartDrawerProps {
   isOpen: boolean;
@@ -316,13 +317,13 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
               </div>
 
               {checkoutStep === 'cart' ? (
-                <button
-                  onClick={() => setCheckoutStep('checkout')}
-                  className="w-full bg-[#5f7d54] hover:bg-[#506c46] active:bg-[#435c3b] text-white font-bold py-3.5 px-6 rounded-lg shadow-md hover:shadow-lg transition-all text-sm tracking-wider uppercase flex items-center justify-center gap-2 cursor-pointer"
+                <a
+                  href={STRIPE_CHECKOUT_URL}
+                  className="w-full bg-[#5f7d54] hover:bg-[#506c46] active:bg-[#435c3b] text-white font-bold py-3.5 px-6 rounded-lg shadow-md hover:shadow-lg transition-all text-sm tracking-wider uppercase flex items-center justify-center gap-2 cursor-pointer text-center"
                 >
                   <span>PROCEED TO CHECKOUT</span>
                   <ArrowRight className="w-4 h-4" />
-                </button>
+                </a>
               ) : (
                 <div className="flex gap-3">
                   <button

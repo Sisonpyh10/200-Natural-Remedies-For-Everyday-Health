@@ -15,7 +15,7 @@ import { Footer } from './components/Footer';
 import { CartDrawer } from './components/CartDrawer';
 import { PolicyModal } from './components/PolicyModal';
 import { CartItem, ReviewItem } from './types';
-import { INITIAL_REVIEWS } from './data/content';
+import { INITIAL_REVIEWS, STRIPE_CHECKOUT_URL } from './data/content';
 
 export default function App() {
   const [cartItems, setCartItems] = useState<CartItem[]>([
@@ -38,27 +38,7 @@ export default function App() {
   const hasBump = cartItems.some((item) => item.id === 'bump-reference-cards');
 
   const handleAddToCart = () => {
-    setCartItems((prev) => {
-      const existing = prev.find((item) => item.id === 'book-digital');
-      if (existing) {
-        return prev.map((item) =>
-          item.id === 'book-digital' ? { ...item, quantity: item.quantity + 1 } : item
-        );
-      }
-      return [
-        ...prev,
-        {
-          id: 'book-digital',
-          title: '200 Natural Remedies for Everyday Health',
-          subtitle: 'Digital Edition (Instant Download)',
-          price: 14.95,
-          originalPrice: 37.0,
-          quantity: 1,
-          image: '/images/natural_remedies_book_cover_1790266645380.jpg',
-        },
-      ];
-    });
-    setIsCartOpen(true);
+    window.location.href = STRIPE_CHECKOUT_URL;
   };
 
   const handleUpdateQuantity = (id: string, delta: number) => {

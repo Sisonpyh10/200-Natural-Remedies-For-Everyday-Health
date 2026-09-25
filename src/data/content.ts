@@ -1,5 +1,7 @@
 import { ReviewItem, RecipeSample } from '../types';
 
+export const STRIPE_CHECKOUT_URL = 'https://buy.stripe.com/dRm00lfrs6ro7Ns3Eo5EY03';
+
 export const INITIAL_REVIEWS: ReviewItem[] = [
   {
     id: 'rev-1',
