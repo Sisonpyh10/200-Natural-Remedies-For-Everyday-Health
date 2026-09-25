@@ -16,17 +16,17 @@ export const HeroProduct: React.FC<HeroProductProps> = ({
 
   const images = [
     {
-      src: '/src/assets/images/demonstration_cover_200_remedies_new.png',
+      src: '/images/demonstration_cover_200_remedies_new.png',
       alt: '200 Natural Remedies for Everyday Health 3D Book & Kindle Mockup',
       label: 'Digital Edition',
     },
     {
-      src: '/src/assets/images/benefits_cover.png',
+      src: '/images/benefits_cover.png',
       alt: '200 Natural Remedies Benefits Overview',
       label: 'Benefits',
     },
     {
-      src: '/src/assets/images/woman_kitchen_cover_new.png',
+      src: '/images/woman_kitchen_cover_new.png',
       alt: 'Woman in kitchen with herbal ingredients and 200 Natural Remedies book',
       label: 'In Kitchen',
     },

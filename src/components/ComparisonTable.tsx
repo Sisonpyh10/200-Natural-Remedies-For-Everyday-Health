@@ -34,7 +34,7 @@ export const ComparisonTable: React.FC = () => {
                 <div className="col-span-6 bg-[#628157] text-white py-3.5 sm:py-4 px-3.5 sm:px-5 flex items-center gap-3">
                   <div className="w-11 h-16 sm:w-13 sm:h-19 rounded-md shadow-sm overflow-hidden shrink-0 border border-white/30 bg-stone-900/10">
                     <img
-                      src="/src/assets/images/natural_remedies_cover.png"
+                      src="/images/natural_remedies_cover.png"
                       alt="200 Natural Remedies Book Cover"
                       referrerPolicy="no-referrer"
                       className="w-full h-full object-cover"

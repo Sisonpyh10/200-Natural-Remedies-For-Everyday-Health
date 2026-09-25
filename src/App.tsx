@@ -26,7 +26,7 @@ export default function App() {
       price: 14.95,
       originalPrice: 37.0,
       quantity: 1,
-      image: '/src/assets/images/natural_remedies_book_cover_1790266645380.jpg',
+      image: '/images/natural_remedies_book_cover_1790266645380.jpg',
     },
   ]);
 
@@ -54,7 +54,7 @@ export default function App() {
           price: 14.95,
           originalPrice: 37.0,
           quantity: 1,
-          image: '/src/assets/images/natural_remedies_book_cover_1790266645380.jpg',
+          image: '/images/natural_remedies_book_cover_1790266645380.jpg',
         },
       ];
     });
@@ -90,7 +90,7 @@ export default function App() {
         price: 4.99,
         originalPrice: 15.0,
         quantity: 1,
-        image: '/src/assets/images/remedy_tea_ingredients_1790266684287.jpg',
+        image: '/images/remedy_tea_ingredients_1790266684287.jpg',
         isBump: true,
       },
     ]);

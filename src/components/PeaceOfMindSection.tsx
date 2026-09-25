@@ -13,7 +13,7 @@ export const PeaceOfMindSection: React.FC<PeaceOfMindSectionProps> = ({ onClaimO
           <div className="lg:col-span-6 grid grid-cols-2 gap-4">
             <div className="rounded-2xl overflow-hidden shadow-md border border-stone-200 aspect-3/4">
               <img
-                src="/src/assets/images/demonstration_2.png"
+                src="/images/demonstration_2.png"
                 alt="200 Natural Solutions book demonstration"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
@@ -21,7 +21,7 @@ export const PeaceOfMindSection: React.FC<PeaceOfMindSectionProps> = ({ onClaimO
             </div>
             <div className="rounded-2xl overflow-hidden shadow-md border border-stone-200 aspect-3/4">
               <img
-                src="/src/assets/images/natural_cover.png"
+                src="/images/natural_cover.png"
                 alt="Natural remedies and everyday home care"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"

@@ -49,7 +49,7 @@ export const GrandmotherStory: React.FC<GrandmotherStoryProps> = ({ onGetCopy })
             {/* Woman reading photo */}
             <div className="relative w-full sm:w-3/5 rounded-2xl overflow-hidden shadow-md border border-stone-200">
               <img
-                src="/src/assets/images/natural_option_cover.png"
+                src="/images/natural_option_cover.png"
                 alt="Woman with 200 Natural Remedies book in kitchen"
                 referrerPolicy="no-referrer"
                 className="w-full h-auto object-cover aspect-3/4"

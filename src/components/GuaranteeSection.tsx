@@ -32,7 +32,7 @@ export const GuaranteeSection: React.FC<GuaranteeSectionProps> = ({
                 {/* Book cover mockup */}
                 <div className="w-32 sm:w-36 aspect-3/4 rounded-lg overflow-hidden shadow-lg border border-stone-200">
                   <img
-                    src="/src/assets/images/free_cover.png"
+                    src="/images/free_cover.png"
                     alt="200 Natural Remedies Book Guarantee Mockup"
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover"
