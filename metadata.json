@@ -1,0 +1,6 @@
+{
+  "name": "200 Natural Solutions for Everyday Problems",
+  "description": "Digital edition of 200 Natural Solutions for Everyday Problems by Marina Lopez. A practical, reliable guide to natural home care with kitchen ingredients.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
